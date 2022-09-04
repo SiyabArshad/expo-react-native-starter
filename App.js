@@ -3,7 +3,10 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {useFonts} from "expo-font"
 import * as SplashScreen from 'expo-splash-screen';
+import { LogBox } from 'react-native';
 export default function App() {
+  LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
   const [fontsLoaded] =useFonts({
       'Rubik-Bold':require("./assets/fonts/Rubik-Bold.ttf"),
       'Rubik-ExtraBold':require("./assets/fonts/Rubik-ExtraBold.ttf"),
