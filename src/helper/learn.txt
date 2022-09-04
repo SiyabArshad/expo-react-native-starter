@@ -1,0 +1,4 @@
+purpose
+1-progress loading
+2-animation and gestures
+3-redux flow
